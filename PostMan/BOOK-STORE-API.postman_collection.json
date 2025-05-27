@@ -9,8 +9,30 @@
 		{
 			"name": "Add a Book",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Example Book\",\n  \"author\": \"John Doe\",\n  \"price\": \"19.99\",\n  \"publishedAt\": \"2023-05-28\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://book-store-api-t8kf.onrender.com/api/books",
+					"protocol": "https",
+					"host": [
+						"book-store-api-t8kf",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"books"
+					]
+				}
 			},
 			"response": []
 		},
@@ -18,23 +40,82 @@
 			"name": "Get All Books",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "https://book-store-api-t8kf.onrender.com/api/books",
+					"protocol": "https",
+					"host": [
+						"book-store-api-t8kf",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"books"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Update a Book",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Updated Book Title\",\n  \"author\": \"Jane Doe\",\n  \"price\": \"25.99\",\n  \"publishedAt\": \"2024-05-27\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://book-store-api-t8kf.onrender.com/api/books/683633b8516cf42106e9617e",
+					"protocol": "https",
+					"host": [
+						"book-store-api-t8kf",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"books",
+						"683633b8516cf42106e9617e"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Delete a Book",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://book-store-api-t8kf.onrender.com/api/books/683633b8516cf42106e9617e",
+					"protocol": "https",
+					"host": [
+						"book-store-api-t8kf",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"books",
+						"683633b8516cf42106e9617e"
+					]
+				}
 			},
 			"response": []
 		}
