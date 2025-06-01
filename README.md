@@ -28,7 +28,7 @@ Each book has the following fields:
   "title": "string",
   "author": "string",
   "price": "string",
-  "publishedDate": "ISODate (string)"
+  "publishedAt": "ISODate (string)"
 }
 ```
 
